@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		4F755DE01CB47CB500584266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F755DDF1CB47CB500584266 /* AppDelegate.swift */; };
-		4F755DE21CB47CB500584266 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F755DE11CB47CB500584266 /* ViewController.swift */; };
+		4F755DE21CB47CB500584266 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F755DE11CB47CB500584266 /* ChatViewController.swift */; };
 		4F755DE51CB47CB500584266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F755DE31CB47CB500584266 /* Main.storyboard */; };
 		4F755DE71CB47CB500584266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F755DE61CB47CB500584266 /* Assets.xcassets */; };
 		4F755DEA1CB47CB500584266 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F755DE81CB47CB500584266 /* LaunchScreen.storyboard */; };
+		4F755DF21CB4847400584266 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F755DF11CB4847400584266 /* Message.swift */; };
+		4FA04DA51CB566B00093CEBE /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA04DA41CB566B00093CEBE /* ChatCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4F755DDC1CB47CB500584266 /* WhaleTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhaleTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F755DDF1CB47CB500584266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4F755DE11CB47CB500584266 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4F755DE11CB47CB500584266 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		4F755DE41CB47CB500584266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F755DE61CB47CB500584266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F755DE91CB47CB500584266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F755DEB1CB47CB500584266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F755DF11CB4847400584266 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		4FA04DA41CB566B00093CEBE /* ChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				4F755DDF1CB47CB500584266 /* AppDelegate.swift */,
-				4F755DE11CB47CB500584266 /* ViewController.swift */,
+				4F755DE11CB47CB500584266 /* ChatViewController.swift */,
+				4F755DF11CB4847400584266 /* Message.swift */,
+				4FA04DA41CB566B00093CEBE /* ChatCell.swift */,
 				4F755DE31CB47CB500584266 /* Main.storyboard */,
 				4F755DE61CB47CB500584266 /* Assets.xcassets */,
 				4F755DE81CB47CB500584266 /* LaunchScreen.storyboard */,
@@ -96,6 +102,7 @@
 				TargetAttributes = {
 					4F755DDB1CB47CB500584266 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 3D23847FTP;
 					};
 				};
 			};
@@ -135,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F755DE21CB47CB500584266 /* ViewController.swift in Sources */,
+				4F755DF21CB4847400584266 /* Message.swift in Sources */,
+				4FA04DA51CB566B00093CEBE /* ChatCell.swift in Sources */,
+				4F755DE21CB47CB500584266 /* ChatViewController.swift in Sources */,
 				4F755DE01CB47CB500584266 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +258,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WhaleTalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Ignaciom6.WhaleTalk;
@@ -260,6 +270,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WhaleTalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Ignaciom6.WhaleTalk;
@@ -286,6 +297,7 @@
 				4F755DF01CB47CB500584266 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
