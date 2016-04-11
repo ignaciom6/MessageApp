@@ -25,8 +25,8 @@ class ChatViewController: UIViewController
         for i in 0...10
         {
             let m = Message()
-            m.text = String(i)
-//            m.text = "This is a longer text used for testing purpose"
+//            m.text = String(i)
+            m.text = "This is a longer text used for testing purpose"
             m.incoming = localIncoming
             localIncoming = !localIncoming
             messages.append(m)
