@@ -14,6 +14,7 @@
 		4F755DEA1CB47CB500584266 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F755DE81CB47CB500584266 /* LaunchScreen.storyboard */; };
 		4F755DF21CB4847400584266 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F755DF11CB4847400584266 /* Message.swift */; };
 		4FA04DA51CB566B00093CEBE /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA04DA41CB566B00093CEBE /* ChatCell.swift */; };
+		4FA9F9021CBDAE72009202E2 /* UITableView+Scroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA9F9011CBDAE72009202E2 /* UITableView+Scroll.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4F755DEB1CB47CB500584266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F755DF11CB4847400584266 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		4FA04DA41CB566B00093CEBE /* ChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		4FA9F9011CBDAE72009202E2 /* UITableView+Scroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Scroll.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				4F755DDF1CB47CB500584266 /* AppDelegate.swift */,
 				4F755DE11CB47CB500584266 /* ChatViewController.swift */,
+				4FA9F9011CBDAE72009202E2 /* UITableView+Scroll.swift */,
 				4F755DF11CB4847400584266 /* Message.swift */,
 				4FA04DA41CB566B00093CEBE /* ChatCell.swift */,
 				4F755DE31CB47CB500584266 /* Main.storyboard */,
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FA9F9021CBDAE72009202E2 /* UITableView+Scroll.swift in Sources */,
 				4F755DF21CB4847400584266 /* Message.swift in Sources */,
 				4FA04DA51CB566B00093CEBE /* ChatCell.swift in Sources */,
 				4F755DE21CB47CB500584266 /* ChatViewController.swift in Sources */,
