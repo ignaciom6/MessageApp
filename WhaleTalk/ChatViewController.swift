@@ -177,9 +177,11 @@ class ChatViewController: UIViewController
         var messages = sections[startDay]
         if  messages == nil{
             dates.append(startDay)
+            dates = dates.sort({$0.earlierDate($1) == $0})
             messages = [Message]()
         }
         messages!.append(message)
+        messages!.sortInPlace{$0.timestamp!.earlierDate($1.timestamp!) == $0.timestamp!}
         sections[startDay] = messages
     }
 }
