@@ -71,7 +71,7 @@ class ChatViewController: UIViewController
         
         NSLayoutConstraint.activateConstraints(messageAreaConstraints)
         
-        tableView.registerClass(ChatCell.self, forCellReuseIdentifier: cellIdentifier)
+        tableView.registerClass(MessageCell.self, forCellReuseIdentifier: cellIdentifier)
         tableView.dataSource = self
         tableView.delegate = self
         tableView.estimatedRowHeight = 44
@@ -206,7 +206,7 @@ extension ChatViewController: UITableViewDataSource
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! ChatCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! MessageCell
         let messages = getMessages(indexPath.section)
         let message = messages[indexPath.row]
         
