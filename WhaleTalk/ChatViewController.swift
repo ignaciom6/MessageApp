@@ -242,6 +242,11 @@ class ChatViewController: UIViewController
             self.chat = mainContext.objectWithID(chat.objectID) as? Chat
         }
     }
+    
+    deinit
+    {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
 }
 
 extension ChatViewController: UITableViewDataSource
