@@ -35,6 +35,7 @@ class AllChatsViewController: UIViewController, TableViewFetchedResultsDisplayer
         tableView.delegate = self
         
         fillWithView(tableView)
+        tableView.tableFooterView = UIView()
         
         if let context = context
         {
@@ -54,7 +55,7 @@ class AllChatsViewController: UIViewController, TableViewFetchedResultsDisplayer
             }
         }
         
-        fakeData()
+//        fakeData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -146,5 +147,13 @@ extension AllChatsViewController: UITableViewDelegate
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
         guard let chat = fetchedResultsController?.objectAtIndexPath(indexPath) as? Chat else {return}
+        
+        let vc = ChatViewController()
+        vc.context = context
+        vc.chat = chat
+        
+        navigationController?.pushViewController(vc, animated: true)
+        
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 }

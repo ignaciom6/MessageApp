@@ -38,6 +38,7 @@ class ChatViewController: UIViewController
             guard let context = context else {throw Error.NoContext}
             
             let request = NSFetchRequest(entityName: "Message")
+            request.predicate = NSPredicate(format: "chat=%@", chat)
             request.sortDescriptors = [NSSortDescriptor(key: "timestamp", ascending: false)]
             if let result = try context.executeFetchRequest(request) as? [Message] {
                 for message in result {
