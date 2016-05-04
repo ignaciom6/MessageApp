@@ -24,6 +24,7 @@
 		4FAFF6571CD2CB5E0009FEA2 /* TableViewFetchedResultsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAFF6561CD2CB5E0009FEA2 /* TableViewFetchedResultsDelegate.swift */; };
 		4FAFF6591CD2E5460009FEA2 /* UIViewController+FillWithView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAFF6581CD2E5460009FEA2 /* UIViewController+FillWithView.swift */; };
 		4FAFF65B1CD2EC750009FEA2 /* ChatCreationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAFF65A1CD2EC750009FEA2 /* ChatCreationDelegate.swift */; };
+		4FB026A21CDAB2690090B550 /* NewGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB026A11CDAB2690090B550 /* NewGroupViewController.swift */; };
 		4FB02BA01CCED91B00CB45AE /* AllChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB02B9F1CCED91B00CB45AE /* AllChatsViewController.swift */; };
 		4FE37B121CC860E300C82CA3 /* CDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE37B111CC860E300C82CA3 /* CDHelper.swift */; };
 		4FE37B151CC8639500C82CA3 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FE37B131CC8639500C82CA3 /* Model.xcdatamodeld */; };
@@ -50,6 +51,7 @@
 		4FAFF6561CD2CB5E0009FEA2 /* TableViewFetchedResultsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewFetchedResultsDelegate.swift; sourceTree = "<group>"; };
 		4FAFF6581CD2E5460009FEA2 /* UIViewController+FillWithView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+FillWithView.swift"; sourceTree = "<group>"; };
 		4FAFF65A1CD2EC750009FEA2 /* ChatCreationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCreationDelegate.swift; sourceTree = "<group>"; };
+		4FB026A11CDAB2690090B550 /* NewGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGroupViewController.swift; sourceTree = "<group>"; };
 		4FB02B9F1CCED91B00CB45AE /* AllChatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllChatsViewController.swift; sourceTree = "<group>"; };
 		4FE37B111CC860E300C82CA3 /* CDHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDHelper.swift; sourceTree = "<group>"; };
 		4FE37B141CC8639500C82CA3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				4F755DDF1CB47CB500584266 /* AppDelegate.swift */,
+				4FB026A11CDAB2690090B550 /* NewGroupViewController.swift */,
 				4FC0EB9D1CD50B9F007968D1 /* ContactsVC */,
 				4FC0EB9E1CD50BD3007968D1 /* AllChatsVC */,
 				4FC0EB9F1CD50C33007968D1 /* NewChatVC */,
@@ -261,6 +264,7 @@
 				4FB02BA01CCED91B00CB45AE /* AllChatsViewController.swift in Sources */,
 				4FAE56961CD19B5700D26F0F /* Contact+CoreDataProperties.swift in Sources */,
 				4FA04DA51CB566B00093CEBE /* MessageCell.swift in Sources */,
+				4FB026A21CDAB2690090B550 /* NewGroupViewController.swift in Sources */,
 				4FE37B191CC864D100C82CA3 /* Message.swift in Sources */,
 				4F755DE21CB47CB500584266 /* ChatViewController.swift in Sources */,
 				4F238E1C1CCBB2F2000D57AF /* Message+CoreDataProperties.swift in Sources */,
