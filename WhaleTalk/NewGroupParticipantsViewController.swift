@@ -21,6 +21,8 @@ class NewGroupParticipantsViewController: UIViewController
     private let cellIdentifier = "ContactCell"
     
     private var displayedContacts = [Contact]()
+    private var allContacts = [Contact]()
+    private var selectedContacts = [Contact]()
 
     override func viewDidLoad()
     {
@@ -38,6 +40,7 @@ class NewGroupParticipantsViewController: UIViewController
         tableView.tableFooterView = UIView(frame: CGRectZero)
         
         searchField = createSearchField()
+        searchField.delegate = self
         tableView.tableHeaderView = searchField
         
         fillWithView(tableView)
@@ -50,7 +53,7 @@ class NewGroupParticipantsViewController: UIViewController
             {
                 if let result = try context.executeFetchRequest(request) as? [Contact]
                 {
-                    displayedContacts = result
+                    allContacts = result
                 }
             }
             catch
@@ -107,6 +110,12 @@ class NewGroupParticipantsViewController: UIViewController
             navigationItem.rightBarButtonItem?.enabled = false
         }
     }
+    
+    private func endSearch()
+    {
+        displayedContacts = selectedContacts
+        tableView.reloadData()
+    }
 
 }
 
@@ -126,5 +135,35 @@ extension NewGroupParticipantsViewController: UITableViewDataSource
         cell.selectionStyle = .None
         
         return cell
+    }
+}
+
+extension NewGroupParticipantsViewController: UITextFieldDelegate
+{
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool
+    {
+        guard let currentText = textField.text else
+        {
+            endSearch()
+            return true
+        }
+        
+        let text = NSString(string:currentText).stringByReplacingCharactersInRange(range, withString: string)
+        
+        if text.characters.count == 0
+        {
+            endSearch()
+            return true
+        }
+        
+        displayedContacts = allContacts.filter {
+            contact in
+            let match = contact.fullName.rangeOfString(text) != nil
+            return match
+        }
+        
+        tableView.reloadData()
+        
+        return true
     }
 }
