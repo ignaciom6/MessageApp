@@ -65,7 +65,8 @@ class NewGroupViewController: UIViewController
     
     func next()
     {
-        
+        guard let context = context, chat = NSEntityDescription.insertNewObjectForEntityForName("Chat", inManagedObjectContext: context) as? Chat else {return}
+        chat.name = subjectField.text
     }
     
     func updateCharacterLabel(forCharCount length: Int)
