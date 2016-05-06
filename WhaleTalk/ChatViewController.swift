@@ -111,7 +111,7 @@ class ChatViewController: UIViewController
         
         if let mainContext = context?.parentContext ?? context
         {
-            NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("contextUpdated:"), name: NSManagedObjectContextObjectsDidChangeNotification, object: mainContext)
+            NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ChatViewController.contextUpdated(_:)), name: NSManagedObjectContextObjectsDidChangeNotification, object: mainContext)
         }
         
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(ChatViewController.handleSingleTap(_:)))
