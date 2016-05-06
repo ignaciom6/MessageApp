@@ -27,7 +27,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         context.persistentStoreCoordinator = CDHelper.sharedInstance.coordinator
         vc.context = context
         
-        importContacts(context)
+        let contactsContext = NSManagedObjectContext(concurrencyType: .PrivateQueueConcurrencyType)
+        contactsContext.persistentStoreCoordinator = CDHelper.sharedInstance.coordinator
+        importContacts(contactsContext)
         
         return true
     }
@@ -58,7 +60,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let dataSeeded = NSUserDefaults.standardUserDefaults().boolForKey("dataSeeded")
         guard !dataSeeded else {return}
         
-        let contactImporter = ContactImporter()
+        let contactImporter = ContactImporter(context: context)
         contactImporter.fetch()
         
         NSUserDefaults.standardUserDefaults().setObject(true, forKey: "dataSeeded")
