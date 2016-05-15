@@ -34,38 +34,41 @@ class ContactImporter
         store.requestAccessForEntityType(.Contacts, completionHandler: {
             granted, error in
             
-            if granted
+            self.context.performBlock
             {
-                do
+                if granted
                 {
-                    let req = CNContactFetchRequest(keysToFetch: [CNContactGivenNameKey, CNContactFamilyNameKey, CNContactPhoneNumbersKey])
-                    
-                    try store.enumerateContactsWithFetchRequest(req, usingBlock: {
-                        cnContact, stop in
-                        guard let contact = NSEntityDescription.insertNewObjectForEntityForName("Contact", inManagedObjectContext: self.context) as? Contact else {return}
+                    do
+                    {
+                        let req = CNContactFetchRequest(keysToFetch: [CNContactGivenNameKey, CNContactFamilyNameKey, CNContactPhoneNumbersKey])
                         
-                        contact.firstName = cnContact.givenName
-                        contact.lastName = cnContact.familyName
-                        contact.contactId = cnContact.identifier
-                        
-                        let contactsNumbers = NSMutableSet()
-                        for cnVal in cnContact.phoneNumbers
-                        {
-                            guard let cnPhoneNumber = cnVal.value as? CNPhoneNumber else {continue}
-                            guard let phoneNumber =  NSEntityDescription.insertNewObjectForEntityForName("PhoneNumber", inManagedObjectContext: self.context) as? PhoneNumber else {continue}
-                            phoneNumber.value = self.formatPhoneNumber(cnPhoneNumber)
-                            contactsNumbers.addObject(phoneNumber)
-                        }
-                        contact.phoneNumbers = contactsNumbers
-                    })
-                }
-                catch let error as NSError
-                {
-                    print(error)
-                }
-                catch
-                {
-                    print("Error with do-catch")
+                        try store.enumerateContactsWithFetchRequest(req, usingBlock: {
+                            cnContact, stop in
+                            guard let contact = NSEntityDescription.insertNewObjectForEntityForName("Contact", inManagedObjectContext: self.context) as? Contact else {return}
+                            
+                            contact.firstName = cnContact.givenName
+                            contact.lastName = cnContact.familyName
+                            contact.contactId = cnContact.identifier
+                            
+                            
+                            for cnVal in cnContact.phoneNumbers
+                            {
+                                guard let cnPhoneNumber = cnVal.value as? CNPhoneNumber else {continue}
+                                guard let phoneNumber =  NSEntityDescription.insertNewObjectForEntityForName("PhoneNumber", inManagedObjectContext: self.context) as? PhoneNumber else {continue}
+                                phoneNumber.value = self.formatPhoneNumber(cnPhoneNumber)
+                                phoneNumber.contact = contact
+                            }
+                        })
+                        try self.context.save()
+                    }
+                    catch let error as NSError
+                    {
+                        print(error)
+                    }
+                    catch
+                    {
+                        print("Error with do-catch")
+                    }
                 }
             }
         })
