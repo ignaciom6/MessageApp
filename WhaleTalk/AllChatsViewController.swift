@@ -23,10 +23,15 @@ class AllChatsViewController: UIViewController, TableViewFetchedResultsDisplayer
         super.viewDidLoad()
 
         title = "Chats"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: (UIImage (named: "new_chat")),
-                                                            style: .Plain,
-                                                            target: self,
-                                                            action: #selector(AllChatsViewController.newChat))
+        
+        let newChatImage = UIImage(named: "new_chat")
+        let rightButton = UIButton()
+        rightButton.frame = CGRectMake(0,0,25,25)
+        rightButton.setBackgroundImage(newChatImage, forState: .Normal)
+        rightButton.addTarget(self, action: #selector(AllChatsViewController.newChat), forControlEvents: .TouchUpInside)
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: rightButton)
+        
         automaticallyAdjustsScrollViewInsets = false
         
         tableView.registerClass(ChatCell.self, forCellReuseIdentifier: cellIdentifier)

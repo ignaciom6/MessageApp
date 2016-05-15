@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F03D9671CE8F6A000A57A76 /* PhoneNumber+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F03D9651CE8F6A000A57A76 /* PhoneNumber+CoreDataProperties.swift */; };
+		4F03D9681CE8F6A000A57A76 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F03D9661CE8F6A000A57A76 /* PhoneNumber.swift */; };
 		4F238E181CCBB2CA000D57AF /* Chat+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F238E151CCBB2CA000D57AF /* Chat+CoreDataProperties.swift */; };
 		4F238E191CCBB2CA000D57AF /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F238E161CCBB2CA000D57AF /* Chat.swift */; };
 		4F238E1C1CCBB2F2000D57AF /* Message+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F238E1B1CCBB2F2000D57AF /* Message+CoreDataProperties.swift */; };
@@ -34,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F03D9651CE8F6A000A57A76 /* PhoneNumber+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhoneNumber+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4F03D9661CE8F6A000A57A76 /* PhoneNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
 		4F238E151CCBB2CA000D57AF /* Chat+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Chat+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4F238E161CCBB2CA000D57AF /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		4F238E1B1CCBB2F2000D57AF /* Message+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -76,6 +80,8 @@
 		4F755DD31CB47CB500584266 = {
 			isa = PBXGroup;
 			children = (
+				4F03D9651CE8F6A000A57A76 /* PhoneNumber+CoreDataProperties.swift */,
+				4F03D9661CE8F6A000A57A76 /* PhoneNumber.swift */,
 				4FAE56941CD19B5700D26F0F /* Contact+CoreDataProperties.swift */,
 				4FAE56951CD19B5700D26F0F /* Contact.swift */,
 				4F238E1B1CCBB2F2000D57AF /* Message+CoreDataProperties.swift */,
@@ -266,10 +272,12 @@
 				4FAE56991CD19F7E00D26F0F /* NewChatViewController.swift in Sources */,
 				4F238E191CCBB2CA000D57AF /* Chat.swift in Sources */,
 				4F2488731CDBA3EE0067A8FD /* NewGroupParticipantsViewController.swift in Sources */,
+				4F03D9671CE8F6A000A57A76 /* PhoneNumber+CoreDataProperties.swift in Sources */,
 				4FE37B151CC8639500C82CA3 /* Model.xcdatamodeld in Sources */,
 				4FAE56971CD19B5700D26F0F /* Contact.swift in Sources */,
 				4FAFF6591CD2E5460009FEA2 /* UIViewController+FillWithView.swift in Sources */,
 				4FB02BA01CCED91B00CB45AE /* AllChatsViewController.swift in Sources */,
+				4F03D9681CE8F6A000A57A76 /* PhoneNumber.swift in Sources */,
 				4FAE56961CD19B5700D26F0F /* Contact+CoreDataProperties.swift in Sources */,
 				4FA04DA51CB566B00093CEBE /* MessageCell.swift in Sources */,
 				4FB026A21CDAB2690090B550 /* NewGroupViewController.swift in Sources */,
