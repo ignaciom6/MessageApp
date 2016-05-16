@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 import Contacts
 
-class ContactImporter
+class ContactImporter: NSObject
 {
     
     private var context: NSManagedObjectContext
@@ -18,6 +18,21 @@ class ContactImporter
     init(context: NSManagedObjectContext)
     {
         self.context = context
+    }
+    
+    func listenForChanges()
+    {
+        CNContactStore.authorizationStatusForEntityType(.Contacts)
+        NSNotificationCenter.defaultCenter().addObserver(
+            self,
+            selector: #selector(ContactImporter.addressBookDidChange(_:)),
+            name: CNContactStoreDidChangeNotification,
+            object: nil)
+    }
+    
+    func addressBookDidChange(notification:NSNotification)
+    {
+        print(notification)
     }
     
     func formatPhoneNumber(number:CNPhoneNumber) -> String
