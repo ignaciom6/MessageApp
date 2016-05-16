@@ -14,6 +14,7 @@ class ContactImporter: NSObject
 {
     
     private var context: NSManagedObjectContext
+    private var lastCNNotificationTime: NSDate?
     
     init(context: NSManagedObjectContext)
     {
@@ -33,6 +34,10 @@ class ContactImporter: NSObject
     func addressBookDidChange(notification:NSNotification)
     {
         print(notification)
+        let now = NSDate()
+        
+        guard lastCNNotificationTime == nil || now.timeIntervalSinceDate(lastCNNotificationTime!) > 1 else {return}
+        lastCNNotificationTime = now
     }
     
     func formatPhoneNumber(number:CNPhoneNumber) -> String
