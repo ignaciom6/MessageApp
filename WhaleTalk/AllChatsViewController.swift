@@ -107,6 +107,7 @@ class AllChatsViewController: UIViewController, TableViewFetchedResultsDisplayer
         let vc = ChatViewController()
         vc.context = context
         vc.chat = chat
+        vc.hidesBottomBarWhenPushed = true
         
         navigationController?.pushViewController(vc, animated: true)
     }
@@ -206,6 +207,7 @@ extension AllChatsViewController: UITableViewDelegate
         let vc = ChatViewController()
         vc.context = context
         vc.chat = chat
+        vc.hidesBottomBarWhenPushed = true
         
         navigationController?.pushViewController(vc, animated: true)
         
