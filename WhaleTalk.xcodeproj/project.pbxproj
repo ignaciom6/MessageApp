@@ -35,6 +35,7 @@
 		4FE37B121CC860E300C82CA3 /* CDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE37B111CC860E300C82CA3 /* CDHelper.swift */; };
 		4FE37B151CC8639500C82CA3 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FE37B131CC8639500C82CA3 /* Model.xcdatamodeld */; };
 		4FE37B191CC864D100C82CA3 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE37B171CC864D100C82CA3 /* Message.swift */; };
+		4FE838B81CF503EC00163BA0 /* TableViewFetchedResultsDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE838B71CF503EC00163BA0 /* TableViewFetchedResultsDisplayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		4FE37B111CC860E300C82CA3 /* CDHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDHelper.swift; sourceTree = "<group>"; };
 		4FE37B141CC8639500C82CA3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		4FE37B171CC864D100C82CA3 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		4FE838B71CF503EC00163BA0 /* TableViewFetchedResultsDisplayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewFetchedResultsDisplayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				4F755DDF1CB47CB500584266 /* AppDelegate.swift */,
 				4FD7B37A1CED318D00D9CBEE /* ContactsViewController.swift */,
 				4FD7B3781CED2D5700D9CBEE /* ContextViewController.swift */,
+				4FE838B71CF503EC00163BA0 /* TableViewFetchedResultsDisplayer.swift */,
 				4FC0EB9D1CD50B9F007968D1 /* ContactsVC */,
 				4FC0EB9E1CD50BD3007968D1 /* AllChatsVC */,
 				4FC0EB9F1CD50C33007968D1 /* NewChatVC */,
@@ -287,6 +290,7 @@
 			files = (
 				4F238E181CCBB2CA000D57AF /* Chat+CoreDataProperties.swift in Sources */,
 				4F2488751CDCF4FD0067A8FD /* ContactImporter.swift in Sources */,
+				4FE838B81CF503EC00163BA0 /* TableViewFetchedResultsDisplayer.swift in Sources */,
 				4FD7B3791CED2D5700D9CBEE /* ContextViewController.swift in Sources */,
 				4FA9F9021CBDAE72009202E2 /* UITableView+Scroll.swift in Sources */,
 				4F238E1E1CCBB7C8000D57AF /* ChatCell.swift in Sources */,
