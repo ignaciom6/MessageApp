@@ -11,7 +11,7 @@ import CoreData
 import Contacts
 import ContactsUI
 
-class ContactsViewController: UIViewController, ContextViewController, TableViewFetchedResultsDisplayer {
+class ContactsViewController: UIViewController, ContextViewController, TableViewFetchedResultsDisplayer, ContactSelector {
 
     var context: NSManagedObjectContext?
     
@@ -35,6 +35,7 @@ class ContactsViewController: UIViewController, ContextViewController, TableView
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         tableView.tableFooterView = UIView(frame: CGRectZero)
         tableView.dataSource = self
+        tableView.delegate = self
         
         fillWithView(tableView)
         
@@ -56,6 +57,7 @@ class ContactsViewController: UIViewController, ContextViewController, TableView
         }
         
         let resultsVC = ContactsSearchResultsController()
+        resultsVC.contactSelector = self
         resultsVC.contacts = fetchedResultsController?.fetchedObjects as! [Contact]
         
         searchController = UISearchController(searchResultsController: resultsVC)
@@ -79,6 +81,26 @@ class ContactsViewController: UIViewController, ContextViewController, TableView
     {
         guard let contact = fetchedResultsController?.objectAtIndexPath(indexPath) as? Contact else {return}
         cell.textLabel?.text = contact.fullName
+    }
+    
+    func selectedContact(contact:Contact)
+    {
+        guard let id = contact.contactId else {return}
+        let store = CNContactStore()
+        let cncontact: CNContact
+        do
+        {
+            cncontact = try store.unifiedContactWithIdentifier(id, keysToFetch: [CNContactViewController.descriptorForRequiredKeys()])
+        }
+        catch
+        {
+            return
+        }
+        
+        let vc = CNContactViewController(forContact:cncontact)
+        vc.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(vc, animated: true)
+        searchController?.active = false
     }
 
 }
@@ -111,5 +133,21 @@ extension ContactsViewController: UITableViewDataSource
         guard let sections = fetchedResultsController?.sections else {return nil}
         let currentSection = sections[section]
         return currentSection.name
+    }
+}
+
+extension ContactsViewController: UITableViewDelegate
+{
+    
+    func tableView(tableView: UITableView, shouldHighlightRowAtIndexPath indexPath: NSIndexPath) -> Bool
+    {
+        return true
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        guard let contact = fetchedResultsController?.objectAtIndexPath(indexPath) as? Contact else {return}
+        selectedContact(contact)
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 }
