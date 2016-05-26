@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4F03D9671CE8F6A000A57A76 /* PhoneNumber+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F03D9651CE8F6A000A57A76 /* PhoneNumber+CoreDataProperties.swift */; };
 		4F03D9681CE8F6A000A57A76 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F03D9661CE8F6A000A57A76 /* PhoneNumber.swift */; };
+		4F20E7851CF7B5F000F2EB3C /* Syncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F20E7841CF7B5F000F2EB3C /* Syncer.swift */; };
 		4F238E181CCBB2CA000D57AF /* Chat+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F238E151CCBB2CA000D57AF /* Chat+CoreDataProperties.swift */; };
 		4F238E191CCBB2CA000D57AF /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F238E161CCBB2CA000D57AF /* Chat.swift */; };
 		4F238E1C1CCBB2F2000D57AF /* Message+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F238E1B1CCBB2F2000D57AF /* Message+CoreDataProperties.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		4F03D9651CE8F6A000A57A76 /* PhoneNumber+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhoneNumber+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4F03D9661CE8F6A000A57A76 /* PhoneNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
+		4F20E7841CF7B5F000F2EB3C /* Syncer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Syncer.swift; sourceTree = "<group>"; };
 		4F238E151CCBB2CA000D57AF /* Chat+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Chat+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4F238E161CCBB2CA000D57AF /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		4F238E1B1CCBB2F2000D57AF /* Message+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				4F755DDF1CB47CB500584266 /* AppDelegate.swift */,
+				4F20E7841CF7B5F000F2EB3C /* Syncer.swift */,
 				4FC0EB9D1CD50B9F007968D1 /* ContactsVC */,
 				4FC0EB9E1CD50BD3007968D1 /* AllChatsVC */,
 				4FC0EB9F1CD50C33007968D1 /* NewChatVC */,
@@ -308,6 +311,7 @@
 				4F03D9671CE8F6A000A57A76 /* PhoneNumber+CoreDataProperties.swift in Sources */,
 				4FE37B151CC8639500C82CA3 /* Model.xcdatamodeld in Sources */,
 				4FAE56971CD19B5700D26F0F /* Contact.swift in Sources */,
+				4F20E7851CF7B5F000F2EB3C /* Syncer.swift in Sources */,
 				4FAFF6591CD2E5460009FEA2 /* UIViewController+FillWithView.swift in Sources */,
 				4FB02BA01CCED91B00CB45AE /* AllChatsViewController.swift in Sources */,
 				4F03D9681CE8F6A000A57A76 /* PhoneNumber.swift in Sources */,
