@@ -69,6 +69,9 @@ class FavoritesViewController: UIViewController, TableViewFetchedResultsDisplaye
             number in
             guard let number = number as? PhoneNumber else {return false}
             return number.registered}).first?.kind
+        
+//        cell.phoneTypeLabel.text = contact.phoneNumbers?.allObjects.first?.kind
+        
         cell.accessoryType = .DetailButton
     }
 

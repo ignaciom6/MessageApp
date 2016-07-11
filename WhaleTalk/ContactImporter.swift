@@ -106,6 +106,7 @@ class ContactImporter: NSObject
                             {
                                 guard let cnPhoneNumber = cnVal.value as? CNPhoneNumber else {continue}
                                 guard let phoneNumber = phoneNumbers[cnPhoneNumber.stringValue] ?? NSEntityDescription.insertNewObjectForEntityForName("PhoneNumber", inManagedObjectContext: self.context) as? PhoneNumber else {continue}
+                                phoneNumber.kind = CNLabeledValue.localizedStringForLabel(cnVal.label)
                                 phoneNumber.value = self.formatPhoneNumber(cnPhoneNumber)
                                 phoneNumber.contact = contact
                             }
