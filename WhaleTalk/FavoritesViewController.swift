@@ -120,4 +120,23 @@ extension FavoritesViewController: UITableViewDelegate
     {
         guard let contact = fetchedResultsController?.objectAtIndexPath(indexPath) as? Contact else {return}
     }
+    
+    func tableView(tableView: UITableView, accessoryButtonTappedForRowWithIndexPath indexPath: NSIndexPath)
+    {
+        guard let contact = fetchedResultsController?.objectAtIndexPath(indexPath) as? Contact else {return}
+        guard let id = contact.contactId else {return}
+        let cncontact: CNContact
+        do
+        {
+            cncontact = try store.unifiedContactWithIdentifier(id, keysToFetch: [CNContactViewController.descriptorForRequiredKeys()])
+        }
+        catch
+        {
+            return
+        }
+        
+        let vc = CNContactViewController(forContact:cncontact)
+        vc.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
