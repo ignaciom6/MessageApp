@@ -31,6 +31,8 @@
 		4FAFF65B1CD2EC750009FEA2 /* ChatCreationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAFF65A1CD2EC750009FEA2 /* ChatCreationDelegate.swift */; };
 		4FB026A21CDAB2690090B550 /* NewGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB026A11CDAB2690090B550 /* NewGroupViewController.swift */; };
 		4FB02BA01CCED91B00CB45AE /* AllChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB02B9F1CCED91B00CB45AE /* AllChatsViewController.swift */; };
+		4FB6057B1D33E7C300A8475F /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB6057A1D33E7C300A8475F /* FavoriteCell.swift */; };
+		4FB6057D1D33E92500A8475F /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB6057C1D33E92500A8475F /* FavoritesViewController.swift */; };
 		4FC8202B1CF5DEF000660722 /* ContactsSearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC8202A1CF5DEF000660722 /* ContactsSearchResultsController.swift */; };
 		4FC8202D1CF5E3A300660722 /* ContactSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC8202C1CF5E3A300660722 /* ContactSelector.swift */; };
 		4FD7B3791CED2D5700D9CBEE /* ContextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD7B3781CED2D5700D9CBEE /* ContextViewController.swift */; };
@@ -68,6 +70,8 @@
 		4FAFF65A1CD2EC750009FEA2 /* ChatCreationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCreationDelegate.swift; sourceTree = "<group>"; };
 		4FB026A11CDAB2690090B550 /* NewGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGroupViewController.swift; sourceTree = "<group>"; };
 		4FB02B9F1CCED91B00CB45AE /* AllChatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllChatsViewController.swift; sourceTree = "<group>"; };
+		4FB6057A1D33E7C300A8475F /* FavoriteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
+		4FB6057C1D33E92500A8475F /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		4FC8202A1CF5DEF000660722 /* ContactsSearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsSearchResultsController.swift; sourceTree = "<group>"; };
 		4FC8202C1CF5E3A300660722 /* ContactSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactSelector.swift; sourceTree = "<group>"; };
 		4FD7B3781CED2D5700D9CBEE /* ContextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 			children = (
 				4F755DDF1CB47CB500584266 /* AppDelegate.swift */,
 				4F20E7841CF7B5F000F2EB3C /* Syncer.swift */,
+				4FB6057A1D33E7C300A8475F /* FavoriteCell.swift */,
+				4FB6057C1D33E92500A8475F /* FavoritesViewController.swift */,
 				4FC0EB9D1CD50B9F007968D1 /* ContactsVC */,
 				4FC0EB9E1CD50BD3007968D1 /* AllChatsVC */,
 				4FC0EB9F1CD50C33007968D1 /* NewChatVC */,
@@ -314,6 +320,7 @@
 				4F20E7851CF7B5F000F2EB3C /* Syncer.swift in Sources */,
 				4FAFF6591CD2E5460009FEA2 /* UIViewController+FillWithView.swift in Sources */,
 				4FB02BA01CCED91B00CB45AE /* AllChatsViewController.swift in Sources */,
+				4FB6057D1D33E92500A8475F /* FavoritesViewController.swift in Sources */,
 				4F03D9681CE8F6A000A57A76 /* PhoneNumber.swift in Sources */,
 				4FAE56961CD19B5700D26F0F /* Contact+CoreDataProperties.swift in Sources */,
 				4FA04DA51CB566B00093CEBE /* MessageCell.swift in Sources */,
@@ -324,6 +331,7 @@
 				4F755DE21CB47CB500584266 /* ChatViewController.swift in Sources */,
 				4F238E1C1CCBB2F2000D57AF /* Message+CoreDataProperties.swift in Sources */,
 				4F755DE01CB47CB500584266 /* AppDelegate.swift in Sources */,
+				4FB6057B1D33E7C300A8475F /* FavoriteCell.swift in Sources */,
 				4FAFF65B1CD2EC750009FEA2 /* ChatCreationDelegate.swift in Sources */,
 				4FD7B37B1CED318D00D9CBEE /* ContactsViewController.swift in Sources */,
 			);

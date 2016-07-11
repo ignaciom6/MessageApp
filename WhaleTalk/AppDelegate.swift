@@ -36,6 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tabController = UITabBarController()
         
         let vcData:[(UIViewController, UIImage, String)] = [
+            (FavoritesViewController(),UIImage(named: "favorites_icon")!, "Favorites"),
             (ContactsViewController(), UIImage(named: "contact_icon")!, "Contacts"),
             (AllChatsViewController(), UIImage(named: "chat_icon")!, "Chats")]
         
