@@ -27,6 +27,8 @@ class FavoritesViewController: UIViewController, TableViewFetchedResultsDisplaye
         
         title = "Favorites"
         
+        navigationItem.leftBarButtonItem = editButtonItem()
+        
         automaticallyAdjustsScrollViewInsets = false
         
         tableView.registerClass(FavoriteCell.self, forCellReuseIdentifier: cellIdentifier)
@@ -57,6 +59,40 @@ class FavoritesViewController: UIViewController, TableViewFetchedResultsDisplaye
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func setEditing(editing: Bool, animated: Bool)
+    {
+        super.setEditing(editing, animated: animated)
+        
+        if editing
+        {
+            tableView.setEditing(true, animated: true)
+            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Delete All", style: .Plain, target: self, action: #selector(FavoritesViewController.deleteAll))
+        }
+        else
+        {
+            tableView.setEditing(false, animated: true)
+            navigationItem.rightBarButtonItem = nil
+            guard let context = context where context.hasChanges else {return}
+            do
+            {
+                try context.save()
+            }
+            catch
+            {
+                print("Error saving")
+            }
+        }
+    }
+    
+    func deleteAll()
+    {
+        guard let contacts = fetchedResultsController?.fetchedObjects as? [Contact] else {return}
+        for contact in contacts
+        {
+            context?.deleteObject(contact)
+        }
     }
     
     func configureCell(cell:UITableViewCell, atIndexPath indexPath:NSIndexPath)
@@ -138,5 +174,11 @@ extension FavoritesViewController: UITableViewDelegate
         let vc = CNContactViewController(forContact:cncontact)
         vc.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath)
+    {
+        guard let contact = fetchedResultsController?.objectAtIndexPath(indexPath) as? Contact else {return}
+        contact.favorite = false
     }
 }
