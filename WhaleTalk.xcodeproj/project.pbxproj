@@ -16,6 +16,12 @@
 		4F238E1E1CCBB7C8000D57AF /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F238E1D1CCBB7C8000D57AF /* ChatCell.swift */; };
 		4F2488731CDBA3EE0067A8FD /* NewGroupParticipantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2488721CDBA3EE0067A8FD /* NewGroupParticipantsViewController.swift */; };
 		4F2488751CDCF4FD0067A8FD /* ContactImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2488741CDCF4FD0067A8FD /* ContactImporter.swift */; };
+		4F49C1FC1D3573C800021BC7 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F49C1FB1D3573C800021BC7 /* Firebase.framework */; };
+		4F49C1FE1D35741E00021BC7 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F49C1FD1D35741E00021BC7 /* libicucore.tbd */; };
+		4F49C2001D35742900021BC7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F49C1FF1D35742900021BC7 /* libc++.tbd */; };
+		4F49C2021D35743100021BC7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F49C2011D35743100021BC7 /* CFNetwork.framework */; };
+		4F49C2041D35743B00021BC7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F49C2031D35743B00021BC7 /* Security.framework */; };
+		4F49C2061D35744200021BC7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F49C2051D35744200021BC7 /* SystemConfiguration.framework */; };
 		4F755DE01CB47CB500584266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F755DDF1CB47CB500584266 /* AppDelegate.swift */; };
 		4F755DE21CB47CB500584266 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F755DE11CB47CB500584266 /* ChatViewController.swift */; };
 		4F755DE51CB47CB500584266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F755DE31CB47CB500584266 /* Main.storyboard */; };
@@ -55,6 +61,12 @@
 		4F238E1D1CCBB7C8000D57AF /* ChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		4F2488721CDBA3EE0067A8FD /* NewGroupParticipantsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGroupParticipantsViewController.swift; sourceTree = "<group>"; };
 		4F2488741CDCF4FD0067A8FD /* ContactImporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactImporter.swift; sourceTree = "<group>"; };
+		4F49C1FB1D3573C800021BC7 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		4F49C1FD1D35741E00021BC7 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		4F49C1FF1D35742900021BC7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		4F49C2011D35743100021BC7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4F49C2031D35743B00021BC7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4F49C2051D35744200021BC7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4F755DDC1CB47CB500584266 /* WhaleTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhaleTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F755DDF1CB47CB500584266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F755DE11CB47CB500584266 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +103,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F49C2061D35744200021BC7 /* SystemConfiguration.framework in Frameworks */,
+				4F49C2041D35743B00021BC7 /* Security.framework in Frameworks */,
+				4F49C2021D35743100021BC7 /* CFNetwork.framework in Frameworks */,
+				4F49C2001D35742900021BC7 /* libc++.tbd in Frameworks */,
+				4F49C1FE1D35741E00021BC7 /* libicucore.tbd in Frameworks */,
+				4F49C1FC1D3573C800021BC7 /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +255,12 @@
 		4FC0EBA31CD50C7B007968D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4F49C2051D35744200021BC7 /* SystemConfiguration.framework */,
+				4F49C2031D35743B00021BC7 /* Security.framework */,
+				4F49C2011D35743100021BC7 /* CFNetwork.framework */,
+				4F49C1FF1D35742900021BC7 /* libc++.tbd */,
+				4F49C1FD1D35741E00021BC7 /* libicucore.tbd */,
+				4F49C1FB1D3573C800021BC7 /* Firebase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -471,6 +495,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WhaleTalk",
+				);
 				INFOPLIST_FILE = WhaleTalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Ignaciom6.WhaleTalk;
@@ -483,6 +511,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WhaleTalk",
+				);
 				INFOPLIST_FILE = WhaleTalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Ignaciom6.WhaleTalk;
