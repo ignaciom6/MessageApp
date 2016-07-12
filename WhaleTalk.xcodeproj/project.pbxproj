@@ -21,6 +21,7 @@
 		4F755DE51CB47CB500584266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F755DE31CB47CB500584266 /* Main.storyboard */; };
 		4F755DE71CB47CB500584266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F755DE61CB47CB500584266 /* Assets.xcassets */; };
 		4F755DEA1CB47CB500584266 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F755DE81CB47CB500584266 /* LaunchScreen.storyboard */; };
+		4FA038871D351C4200B4F32E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA038861D351C4200B4F32E /* SignUpViewController.swift */; };
 		4FA04DA51CB566B00093CEBE /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA04DA41CB566B00093CEBE /* MessageCell.swift */; };
 		4FA9F9021CBDAE72009202E2 /* UITableView+Scroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA9F9011CBDAE72009202E2 /* UITableView+Scroll.swift */; };
 		4FAE56961CD19B5700D26F0F /* Contact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE56941CD19B5700D26F0F /* Contact+CoreDataProperties.swift */; };
@@ -60,6 +61,7 @@
 		4F755DE61CB47CB500584266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F755DE91CB47CB500584266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F755DEB1CB47CB500584266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FA038861D351C4200B4F32E /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ../SignUpViewController.swift; sourceTree = "<group>"; };
 		4FA04DA41CB566B00093CEBE /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		4FA9F9011CBDAE72009202E2 /* UITableView+Scroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Scroll.swift"; sourceTree = "<group>"; };
 		4FAE56941CD19B5700D26F0F /* Contact+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				4F755DDF1CB47CB500584266 /* AppDelegate.swift */,
+				4FA038861D351C4200B4F32E /* SignUpViewController.swift */,
 				4FC0EB9D1CD50B9F007968D1 /* ContactsVC */,
 				4FC0EB9E1CD50BD3007968D1 /* AllChatsVC */,
 				4FC0EB9F1CD50C33007968D1 /* NewChatVC */,
@@ -329,6 +332,7 @@
 				4FE37B121CC860E300C82CA3 /* CDHelper.swift in Sources */,
 				4FAE56991CD19F7E00D26F0F /* NewChatViewController.swift in Sources */,
 				4F238E191CCBB2CA000D57AF /* Chat.swift in Sources */,
+				4FA038871D351C4200B4F32E /* SignUpViewController.swift in Sources */,
 				4F2488731CDBA3EE0067A8FD /* NewGroupParticipantsViewController.swift in Sources */,
 				4F03D9671CE8F6A000A57A76 /* PhoneNumber+CoreDataProperties.swift in Sources */,
 				4FE37B151CC8639500C82CA3 /* Model.xcdatamodeld in Sources */,
