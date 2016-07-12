@@ -121,21 +121,37 @@
 			isa = PBXGroup;
 			children = (
 				4F755DDF1CB47CB500584266 /* AppDelegate.swift */,
-				4F20E7841CF7B5F000F2EB3C /* Syncer.swift */,
-				4FB6057A1D33E7C300A8475F /* FavoriteCell.swift */,
-				4FB6057C1D33E92500A8475F /* FavoritesViewController.swift */,
 				4FC0EB9D1CD50B9F007968D1 /* ContactsVC */,
 				4FC0EB9E1CD50BD3007968D1 /* AllChatsVC */,
 				4FC0EB9F1CD50C33007968D1 /* NewChatVC */,
 				4FC0EBA01CD50C41007968D1 /* ChatVC */,
 				4FA06BDB1CEA7C6B00609766 /* NewGroupVC */,
 				4FA06BDC1CEA7C8F00609766 /* NewGroupParticipantsVC */,
+				4FA038841D351B2500B4F32E /* FavoritesVC */,
 				4FC0EBA11CD50C5D007968D1 /* Protocols */,
 				4FC0EBA21CD50C70007968D1 /* Helpers */,
+				4FA038851D351B8A00B4F32E /* Data */,
 				4FC0EBA31CD50C7B007968D1 /* Frameworks */,
 				4FC0EBA41CD50D9A007968D1 /* Supporting Files */,
 			);
 			path = WhaleTalk;
+			sourceTree = "<group>";
+		};
+		4FA038841D351B2500B4F32E /* FavoritesVC */ = {
+			isa = PBXGroup;
+			children = (
+				4FB6057A1D33E7C300A8475F /* FavoriteCell.swift */,
+				4FB6057C1D33E92500A8475F /* FavoritesViewController.swift */,
+			);
+			name = FavoritesVC;
+			sourceTree = "<group>";
+		};
+		4FA038851D351B8A00B4F32E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4F20E7841CF7B5F000F2EB3C /* Syncer.swift */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 		4FA06BDB1CEA7C6B00609766 /* NewGroupVC */ = {
