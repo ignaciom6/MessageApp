@@ -14,6 +14,8 @@ class SignUpViewController: UIViewController
     private let phoneNumberField = UITextField()
     private let emailField = UITextField()
     private let passwordField = UITextField()
+    
+    var remoteStore: RemoteStore?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,6 +90,10 @@ class SignUpViewController: UIViewController
             alertForError("Password must be at least 6 characters")
             return
         }
+        
+        remoteStore?.signUp(phoneNumber: phoneNumber, email: email, password: password,
+                            success: { },
+                            error: {errorString in })
     }
     
     private func alertForError(error:String)

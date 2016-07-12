@@ -22,6 +22,7 @@
 		4F755DE71CB47CB500584266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F755DE61CB47CB500584266 /* Assets.xcassets */; };
 		4F755DEA1CB47CB500584266 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F755DE81CB47CB500584266 /* LaunchScreen.storyboard */; };
 		4FA038871D351C4200B4F32E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA038861D351C4200B4F32E /* SignUpViewController.swift */; };
+		4FA038891D352B1D00B4F32E /* RemoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA038881D352B1D00B4F32E /* RemoteStore.swift */; };
 		4FA04DA51CB566B00093CEBE /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA04DA41CB566B00093CEBE /* MessageCell.swift */; };
 		4FA9F9021CBDAE72009202E2 /* UITableView+Scroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA9F9011CBDAE72009202E2 /* UITableView+Scroll.swift */; };
 		4FAE56961CD19B5700D26F0F /* Contact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE56941CD19B5700D26F0F /* Contact+CoreDataProperties.swift */; };
@@ -62,6 +63,7 @@
 		4F755DE91CB47CB500584266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F755DEB1CB47CB500584266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FA038861D351C4200B4F32E /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ../SignUpViewController.swift; sourceTree = "<group>"; };
+		4FA038881D352B1D00B4F32E /* RemoteStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteStore.swift; sourceTree = "<group>"; };
 		4FA04DA41CB566B00093CEBE /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		4FA9F9011CBDAE72009202E2 /* UITableView+Scroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Scroll.swift"; sourceTree = "<group>"; };
 		4FAE56941CD19B5700D26F0F /* Contact+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			children = (
 				4F755DDF1CB47CB500584266 /* AppDelegate.swift */,
 				4FA038861D351C4200B4F32E /* SignUpViewController.swift */,
+				4FA038881D352B1D00B4F32E /* RemoteStore.swift */,
 				4FC0EB9D1CD50B9F007968D1 /* ContactsVC */,
 				4FC0EB9E1CD50BD3007968D1 /* AllChatsVC */,
 				4FC0EB9F1CD50C33007968D1 /* NewChatVC */,
@@ -325,6 +328,7 @@
 				4F238E181CCBB2CA000D57AF /* Chat+CoreDataProperties.swift in Sources */,
 				4F2488751CDCF4FD0067A8FD /* ContactImporter.swift in Sources */,
 				4FE838B81CF503EC00163BA0 /* TableViewFetchedResultsDisplayer.swift in Sources */,
+				4FA038891D352B1D00B4F32E /* RemoteStore.swift in Sources */,
 				4FD7B3791CED2D5700D9CBEE /* ContextViewController.swift in Sources */,
 				4FA9F9021CBDAE72009202E2 /* UITableView+Scroll.swift in Sources */,
 				4F238E1E1CCBB7C8000D57AF /* ChatCell.swift in Sources */,
