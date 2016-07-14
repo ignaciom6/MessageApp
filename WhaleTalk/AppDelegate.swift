@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private var contactsSyncer: Syncer?
     private var contactsUploadSyncer: Syncer?
     private var firebaseSyncer: Syncer?
+    
+    private var firebaseStore:FirebaseStore?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
     {
@@ -36,32 +38,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         contactsSyncer = Syncer(mainContext: mainContext, backgroundContext: contactsContext)
         contactsUploadSyncer = Syncer(mainContext: contactsContext, backgroundContext: firebaseContext)
         firebaseSyncer = Syncer(mainContext: mainContext, backgroundContext: firebaseContext)
+        
+        let firebaseStore = FirebaseStore(context: firebaseContext)
+        self.firebaseStore = firebaseStore
+        
         contactImporter = ContactImporter(context: contactsContext)
-        importContacts(contactsContext)
         
-        contactImporter?.listenForChanges()
-        
-        let tabController = UITabBarController()
-        
-        let vcData:[(UIViewController, UIImage, String)] = [
-            (FavoritesViewController(),UIImage(named: "favorites_icon")!, "Favorites"),
-            (ContactsViewController(), UIImage(named: "contact_icon")!, "Contacts"),
-            (AllChatsViewController(), UIImage(named: "chat_icon")!, "Chats")]
-        
-        let vcs = vcData.map {
-            (vc:UIViewController, image:UIImage, title:String)->UINavigationController in
-            if var vc = vc as? ContextViewController
-            {
-                vc.context = mainContext
+        if firebaseStore.hasAuth()
+        {
+            contactImporter?.listenForChanges()
+            
+            let tabController = UITabBarController()
+            
+            let vcData:[(UIViewController, UIImage, String)] = [
+                (FavoritesViewController(),UIImage(named: "favorites_icon")!, "Favorites"),
+                (ContactsViewController(), UIImage(named: "contact_icon")!, "Contacts"),
+                (AllChatsViewController(), UIImage(named: "chat_icon")!, "Chats")]
+            
+            let vcs = vcData.map {
+                (vc:UIViewController, image:UIImage, title:String)->UINavigationController in
+                if var vc = vc as? ContextViewController
+                {
+                    vc.context = mainContext
+                }
+                let nav = UINavigationController(rootViewController: vc)
+                nav.tabBarItem.image = image
+                nav.title = title
+                return nav
             }
-            let nav = UINavigationController(rootViewController: vc)
-            nav.tabBarItem.image = image
-            nav.title = title
-            return nav
+            
+            tabController.viewControllers = vcs
+            window?.rootViewController = tabController
         }
-        
-        tabController.viewControllers = vcs
-        window?.rootViewController = SignUpViewController()
+        else
+        {
+            window?.rootViewController = SignUpViewController()
+        }
         
         return true
     }
