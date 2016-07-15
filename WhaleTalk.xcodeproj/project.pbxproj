@@ -16,13 +16,13 @@
 		4F238E1E1CCBB7C8000D57AF /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F238E1D1CCBB7C8000D57AF /* ChatCell.swift */; };
 		4F2488731CDBA3EE0067A8FD /* NewGroupParticipantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2488721CDBA3EE0067A8FD /* NewGroupParticipantsViewController.swift */; };
 		4F2488751CDCF4FD0067A8FD /* ContactImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2488741CDCF4FD0067A8FD /* ContactImporter.swift */; };
-		4F49C1FC1D3573C800021BC7 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F49C1FB1D3573C800021BC7 /* Firebase.framework */; };
 		4F49C1FE1D35741E00021BC7 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F49C1FD1D35741E00021BC7 /* libicucore.tbd */; };
 		4F49C2001D35742900021BC7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F49C1FF1D35742900021BC7 /* libc++.tbd */; };
 		4F49C2021D35743100021BC7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F49C2011D35743100021BC7 /* CFNetwork.framework */; };
 		4F49C2041D35743B00021BC7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F49C2031D35743B00021BC7 /* Security.framework */; };
 		4F49C2061D35744200021BC7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F49C2051D35744200021BC7 /* SystemConfiguration.framework */; };
 		4F49C2081D368A8C00021BC7 /* FirebaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F49C2071D368A8C00021BC7 /* FirebaseStore.swift */; };
+		4F49C20A1D37E0A800021BC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F49C2091D37E0A800021BC7 /* GoogleService-Info.plist */; };
 		4F755DE01CB47CB500584266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F755DDF1CB47CB500584266 /* AppDelegate.swift */; };
 		4F755DE21CB47CB500584266 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F755DE11CB47CB500584266 /* ChatViewController.swift */; };
 		4F755DE51CB47CB500584266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F755DE31CB47CB500584266 /* Main.storyboard */; };
@@ -50,9 +50,11 @@
 		4FE37B151CC8639500C82CA3 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FE37B131CC8639500C82CA3 /* Model.xcdatamodeld */; };
 		4FE37B191CC864D100C82CA3 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE37B171CC864D100C82CA3 /* Message.swift */; };
 		4FE838B81CF503EC00163BA0 /* TableViewFetchedResultsDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE838B71CF503EC00163BA0 /* TableViewFetchedResultsDisplayer.swift */; };
+		A8945A60E9FAE4675C4B064E /* libPods-WhaleTalk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B642694585FFF8414D2F0E /* libPods-WhaleTalk.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17B642694585FFF8414D2F0E /* libPods-WhaleTalk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WhaleTalk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F03D9651CE8F6A000A57A76 /* PhoneNumber+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhoneNumber+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4F03D9661CE8F6A000A57A76 /* PhoneNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
 		4F20E7841CF7B5F000F2EB3C /* Syncer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Syncer.swift; sourceTree = "<group>"; };
@@ -62,13 +64,13 @@
 		4F238E1D1CCBB7C8000D57AF /* ChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		4F2488721CDBA3EE0067A8FD /* NewGroupParticipantsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGroupParticipantsViewController.swift; sourceTree = "<group>"; };
 		4F2488741CDCF4FD0067A8FD /* ContactImporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactImporter.swift; sourceTree = "<group>"; };
-		4F49C1FB1D3573C800021BC7 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		4F49C1FD1D35741E00021BC7 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		4F49C1FF1D35742900021BC7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		4F49C2011D35743100021BC7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		4F49C2031D35743B00021BC7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4F49C2051D35744200021BC7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4F49C2071D368A8C00021BC7 /* FirebaseStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseStore.swift; sourceTree = "<group>"; };
+		4F49C2091D37E0A800021BC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4F755DDC1CB47CB500584266 /* WhaleTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhaleTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F755DDF1CB47CB500584266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F755DE11CB47CB500584266 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,8 @@
 		4FE37B141CC8639500C82CA3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		4FE37B171CC864D100C82CA3 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		4FE838B71CF503EC00163BA0 /* TableViewFetchedResultsDisplayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewFetchedResultsDisplayer.swift; sourceTree = "<group>"; };
+		5C154DCC906DD09FEF361ACA /* Pods-WhaleTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaleTalk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhaleTalk/Pods-WhaleTalk.debug.xcconfig"; sourceTree = "<group>"; };
+		A53E539943C62BC23A61E795 /* Pods-WhaleTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaleTalk.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhaleTalk/Pods-WhaleTalk.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +114,7 @@
 				4F49C2021D35743100021BC7 /* CFNetwork.framework in Frameworks */,
 				4F49C2001D35742900021BC7 /* libc++.tbd in Frameworks */,
 				4F49C1FE1D35741E00021BC7 /* libicucore.tbd in Frameworks */,
-				4F49C1FC1D3573C800021BC7 /* Firebase.framework in Frameworks */,
+				A8945A60E9FAE4675C4B064E /* libPods-WhaleTalk.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +134,8 @@
 				4F238E161CCBB2CA000D57AF /* Chat.swift */,
 				4F755DDE1CB47CB500584266 /* WhaleTalk */,
 				4F755DDD1CB47CB500584266 /* Products */,
+				B287233A7E77598E7FBE2823 /* Pods */,
+				53754C04B524DA5303C13E18 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -263,7 +269,6 @@
 				4F49C2011D35743100021BC7 /* CFNetwork.framework */,
 				4F49C1FF1D35742900021BC7 /* libc++.tbd */,
 				4F49C1FD1D35741E00021BC7 /* libicucore.tbd */,
-				4F49C1FB1D3573C800021BC7 /* Firebase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -276,8 +281,26 @@
 				4F755DE61CB47CB500584266 /* Assets.xcassets */,
 				4F755DE81CB47CB500584266 /* LaunchScreen.storyboard */,
 				4F755DEB1CB47CB500584266 /* Info.plist */,
+				4F49C2091D37E0A800021BC7 /* GoogleService-Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		53754C04B524DA5303C13E18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17B642694585FFF8414D2F0E /* libPods-WhaleTalk.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B287233A7E77598E7FBE2823 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C154DCC906DD09FEF361ACA /* Pods-WhaleTalk.debug.xcconfig */,
+				A53E539943C62BC23A61E795 /* Pods-WhaleTalk.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,9 +310,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F755DEE1CB47CB500584266 /* Build configuration list for PBXNativeTarget "WhaleTalk" */;
 			buildPhases = (
+				2D39956BC1684A14A358189A /* [CP] Check Pods Manifest.lock */,
 				4F755DD81CB47CB500584266 /* Sources */,
 				4F755DD91CB47CB500584266 /* Frameworks */,
 				4F755DDA1CB47CB500584266 /* Resources */,
+				8C097ECF18E45A135C5B38A4 /* [CP] Embed Pods Frameworks */,
+				E4B338B5CA9449C314CA0D82 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -340,12 +366,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F755DEA1CB47CB500584266 /* LaunchScreen.storyboard in Resources */,
+				4F49C20A1D37E0A800021BC7 /* GoogleService-Info.plist in Resources */,
 				4F755DE71CB47CB500584266 /* Assets.xcassets in Resources */,
 				4F755DE51CB47CB500584266 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D39956BC1684A14A358189A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8C097ECF18E45A135C5B38A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhaleTalk/Pods-WhaleTalk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4B338B5CA9449C314CA0D82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhaleTalk/Pods-WhaleTalk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4F755DD81CB47CB500584266 /* Sources */ = {
@@ -496,6 +571,7 @@
 		};
 		4F755DEF1CB47CB500584266 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C154DCC906DD09FEF361ACA /* Pods-WhaleTalk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -512,6 +588,7 @@
 		};
 		4F755DF01CB47CB500584266 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A53E539943C62BC23A61E795 /* Pods-WhaleTalk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

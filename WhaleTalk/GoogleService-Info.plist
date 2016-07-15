@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>828998956591-7vtqhmbcla9dcadpt85hndg38eitudja.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.828998956591-7vtqhmbcla9dcadpt85hndg38eitudja</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDXLoLvqBOtNv-YjhGh-hrmXtK_f_iwyVs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>828998956591</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Ignaciom6.WhaleTalk</string>
+	<key>PROJECT_ID</key>
+	<string>whaletalk-e991a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>whaletalk-e991a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:828998956591:ios:eef1f0cb8cc29747</string>
+	<key>DATABASE_URL</key>
+	<string>https://whaletalk-e991a.firebaseio.com</string>
+</dict>
+</plist>

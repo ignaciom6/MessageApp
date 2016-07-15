@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,6 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
     {
         // Override point for customization after application launch.
+        
+        FIRApp.configure()
         
         let mainContext = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
         mainContext.persistentStoreCoordinator = CDHelper.sharedInstance.coordinator
@@ -66,12 +69,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return nav
         }
         
+        tabController.viewControllers = vcs
+        
         if firebaseStore.hasAuth()
         {
             firebaseStore.startSyncing()
             contactImporter?.listenForChanges()
             
-            tabController.viewControllers = vcs
             window?.rootViewController = tabController
         }
         else
